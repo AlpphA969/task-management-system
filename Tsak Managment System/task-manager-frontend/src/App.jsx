@@ -20,7 +20,7 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [successMessage, setSuccessMessage] = useState('');
 
-  const API_URL = 'http://localhost:3000/api';
+  const API_URL = 'https://task-management-system-qtj0.onrender.com';
 
   // Load token from localStorage on app start
   useEffect(() => {
