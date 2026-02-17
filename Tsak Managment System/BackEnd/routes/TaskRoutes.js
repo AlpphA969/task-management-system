@@ -6,8 +6,9 @@ const DeletTaskController = require('../controllers/DeletTaskController')
 const { auth } = require('../middlewares/auth')
 const EditController = require('../controllers/EditController')
 const routes = express.Router()
-routes.post('/api/tasks' ,taskvalidate  , auth, AddTaskController)
-routes.get('/api/tasks' ,auth,GetTaskController)
-routes.delete('/api/tasks/:taskid',auth ,DeletTaskController)
-routes.put('/api/tasks/:taskid',auth,EditController)
+routes.post('/tasks' ,taskvalidate  , auth, AddTaskController)
+routes.get('/tasks' ,auth,GetTaskController)
+routes.delete('/tasks/:taskid',auth ,DeletTaskController)
+routes.put('/tasks/:taskid',auth,EditController)
+
 module.exports = routes
